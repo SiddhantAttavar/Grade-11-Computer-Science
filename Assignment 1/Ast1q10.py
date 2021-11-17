@@ -9,8 +9,15 @@ count = 0
 
 # Iterate through words
 for word in input('Enter a sentence: ').lower().split():
+    newWord = ''
+    # Iterate through each letter in word
+    for letter in word:
+        # If letter is a letter, add to newWord
+        if letter.isalnum():
+            newWord += letter
+
     # Check if word is palindromic
-    if word == word[::-1]:
+    if newWord == newWord[::-1]:
         # Increment count
         count += 1
 
