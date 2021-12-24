@@ -8,17 +8,21 @@ b. Display the cities with male population greater than 40000.
 c. Compute the average of women population without using any statistical module.
 '''
 
-d = {}
+population = {}
+malePopulation = {}
+femalePopulation = {}
 n = int(input('Enter number of cities: '))
 for _ in range(n):
 	city = input('Enter city: ')
 	population = int(input('Enter population: '))
-	d[city] = population
+	population[city] = population
 
 sumPopulation = 0
-for k, v in d.items():
+for k, v in population.items():
 	malePop = int(0.52 * v)
 	femalePop = v - malePop
+	malePopulation[k] = malePop
+	femalePopulation[k] = femalePop
 	if malePop > 40000:
 		print('The male population of', k, 'is greater than 40000')
 	
