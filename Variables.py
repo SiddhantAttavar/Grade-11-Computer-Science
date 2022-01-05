@@ -11,5 +11,5 @@ name = input()
 print(f'String: {name}')
 
 # Boolean
-b = input().upper() = 'YES'
-print(f'Boolean: b')git
+b = input().upper() == 'YES'
+print(f'Boolean: b')
