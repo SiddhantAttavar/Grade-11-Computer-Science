@@ -14,8 +14,8 @@ femalePopulation = {}
 n = int(input('Enter number of cities: '))
 for _ in range(n):
 	city = input('Enter city: ')
-	population = int(input('Enter population: '))
-	population[city] = population
+	currPopulation = int(input('Enter population: '))
+	population[city] = currPopulation
 
 sumPopulation = 0
 for k, v in population.items():
