@@ -17,6 +17,12 @@ Account = {}
 while True:
 	op = input('Deposit / Withdraw / Display balance / Exit - D/W/B/E: ').lower()
 	accountid = int(input('Enter account id: '))
+	if accountid not in Account:
+		name = input('Enter name: ')
+		Account[accountid] = {
+			'name': name,
+			'balance': 0
+		}
 	if op == 'd':
 		amount = int(input('Enter deposit amount: '))
 		Account[accountid]['balance'] += amount
@@ -27,11 +33,4 @@ while True:
 		else:
 			Account[accountid]['balance'] -= amount
 	elif op == 'b':
-		if accountid in Account:
-			print(Account[accountid]['name'], 'balance is', Account[accountid]['balance'])
-		else:
-			name = input('Enter name: ')
-			Account[accountid] = {
-				'name': name,
-				'balance': 0
-			}
+		print(Account[accountid]['name'], 'balance is', Account[accountid]['balance'])
