@@ -20,11 +20,13 @@ print('Middle row: ')
 for j in range(n):
 	print(a[n // 2][j], end = ' ')
 	s += a[n // 2][j]
+print()
 
 print('Middle row: ')
 for i in range(n):
 	print(a[i][n // 2], end = ' ')
 	s += a[i][n // 2]
+print()
 
 s -= a[n // 2][n // 2]
 print('Sum:', s)
