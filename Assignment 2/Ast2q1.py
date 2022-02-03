@@ -1,7 +1,9 @@
-# Input a list of 10 elements (numbers) and display the
-# original list and each occurrence of all the two-digit 
-# numbers (including negative 2-digit numbers) in the list.
-# Also display the count and sum of them.(Input numbers can be repeated)
+'''
+Input a list of 10 elements (numbers) and display the
+original list and each occurrence of all the two-digit 
+numbers (including negative 2-digit numbers) in the list.
+Also display the count and sum of them.(Input numbers can be repeated)
+'''
 
 # Take input
 l = []

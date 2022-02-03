@@ -5,7 +5,8 @@ Display a suitable message if the numbers are not divisible by 5.
 Both the operations have to be performed without using any inbuilt function.
 Sample input : [10,30,20,40,70]
 Sample output: [70,40,20,30,10]
-The smallest and largest number divisible by 5 are 10 and 70.'''
+The smallest and largest number divisible by 5 are 10 and 70.
+'''
 
 from math import inf
 

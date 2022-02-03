@@ -1,9 +1,11 @@
-# a) Accept names of 5 students along with their marks and store to a nested list Stu_Marks.
-# b) Display the original list in tabular format.
-# c)Search for a name (Which is taken as input) in the list and update the new mark which is input.
-# d)Display the updated list in tabular format.
-# e)Display a suitable message if the name doesn’texist in Stu_Marks.
-# List structure:[[name1, mark1], [name2, mark2],......]
+'''
+a) Accept names of 5 students along with their marks and store to a nested list Stu_Marks.
+b) Display the original list in tabular format.
+c)Search for a name (Which is taken as input) in the list and update the new mark which is input.
+d)Display the updated list in tabular format.
+e)Display a suitable message if the name doesn'texist in Stu_Marks.
+List structure:[[name1, mark1], [name2, mark2],......]
+'''
 
 students = []
 for i in range(5):
