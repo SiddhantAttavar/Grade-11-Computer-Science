@@ -12,8 +12,9 @@ for i in range(5):
 	students.append([input("Enter a name: "), int(input("Enter a mark: "))])
 
 print("Original list: ")
+print("Name\tMarks")
 for i in students:
-	print(i[0], i[1])
+	print(i[0], '\t' , i[1])
 
 name = input("Enter a name: ")
 for i in students:

@@ -11,7 +11,9 @@ for i in range(10):
 	l.append(int(input("Enter a number: ")))
 
 # Display original list
-print("Original list: ", *l)
+print("Original list: ")
+for i in range(l):
+	print(i)
 
 # Display each occurrence of two-digit numbers
 finlist = []
@@ -20,7 +22,9 @@ for i in l:
 	if i >= 10 and i <= 99:
 		finlist.append(i)
 		sumNums += i
-print("Occurrence of two-digit numbers: ", *finlist)
+print("Occurrence of two-digit numbers: ")
+for i in finlist:
+	print(i)
 print("Count of two-digit numbers: ", len(finlist))
 print("Sum of two-digit numbers: ", sumNums)
 

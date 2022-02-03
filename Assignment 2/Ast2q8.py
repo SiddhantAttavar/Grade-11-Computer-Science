@@ -28,11 +28,15 @@ while True:
 		else:
 			print(name, 'not found')
 	elif op == 'd':
-		name = input('Enter name: ')
+		num = int(input('Enter number: '))
+		for k, v in contact_det.items():
+			if v == num:
+				name = k
+				break
+		else:
+			print(num, 'not found')
 		if name in contact_det:
 			contact_det.pop(name)
-		else:
-			print(name, 'not found')
 	else:
 		break
     
