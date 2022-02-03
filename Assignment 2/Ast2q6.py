@@ -2,10 +2,10 @@
 6. The Great Indian Library stores the book details 
 (bookid, number of total copies, number of copies remaining) in a
 tuple named bookdet.
-bookdet = ((‘Fic101’,5,[5]) , (‘Lit257’,4,[4]) , (‘SciFi333’,4,[4]), 
-(‘Autobi243’,6,[6])). 
+bookdet = (('Fic101',5,[5]) , ('Lit257',4,[4]) , ('SciFi333',4,[4]), 
+('Autobi243',6,[6])). 
 It also stores the member details (memid,password) in a list named memdet.
-memdet = [(m222,’AHK101’),(m223,’fgdHk’),(m224,’iuytr’)]
+memdet = [(m222,'AHK101'),(m223,'fgdHk'),(m224,'iuytr')]
 Write a menu driven program to automate the issue process. 
 (a) Every time a member comes, he/she is asked to login. The login 
 credentials are checked in the memdet list and appropriate message is 
