@@ -7,15 +7,18 @@ e)Display a suitable message if the name doesn'texist in Stu_Marks.
 List structure:[[name1, mark1], [name2, mark2],......]
 '''
 
+# Take input
 students = []
 for i in range(5):
 	students.append([input("Enter a name: "), int(input("Enter a mark: "))])
 
+# Print original list
 print("Original list: ")
 print("Name\tMarks")
 for i in students:
 	print(i[0], '\t' , i[1])
 
+# Update marks
 name = input("Enter a name: ")
 for i in students:
 	if i[0] == name:

@@ -8,6 +8,7 @@ c. Delete a friend's record from the dictionary using his/her number. Display a
 suitable message if the record does not exist.
 '''
 
+# Take input
 contact_det = {}
 n = int(input('Number of friends: '))
 for _ in range(n):
@@ -15,12 +16,16 @@ for _ in range(n):
 	num = int(input('Enter mobile number: '))
 	contact_det[name] = num
 
+# Sort contacts
 for k, v in sorted(contact_det.items()):
 	print(k, ':', v)
 
 while True:
+	# Take input
 	op = input('Modify / Delete / Exit - M/D/E: ').lower()
+
 	if op == 'm':
+		# Modify existing contact
 		name = input('Enter name: ')
 		num = int(input('Enter mobile number: '))
 		if name in contact_det:
@@ -28,6 +33,7 @@ while True:
 		else:
 			print(name, 'not found')
 	elif op == 'd':
+		# Delete contact
 		num = int(input('Enter number: '))
 		for k, v in contact_det.items():
 			if v == num:
@@ -40,5 +46,6 @@ while True:
 	else:
 		break
     
+	# Display contacts
 	for k, v in sorted(contact_det.items()):
 		print(k, ':', v)

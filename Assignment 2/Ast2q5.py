@@ -14,12 +14,16 @@ or updation.
 
 product = [['p1',1200], ['p2',2300], ['p3',1700], ['p4',1950]]
 while True:
+	# Take input
 	op = input('Enter A/B/C or E to exit: ')
+
 	if op == 'A':
+		# Add new items
 		name = input('Enter product name: ')
 		cost = int(input('Enter product price: '))
 		product.append([name, cost])
 	elif op == 'B':
+		# Remove items
 		name = input('Enter product name: ')
 		for i in range(len(product)):
 			if name == product[i][0]:
@@ -28,6 +32,7 @@ while True:
 		else:
 			print(name, 'not found')
 	elif op == 'C':
+		# Update price of items
 		name = input('Enter product name: ')
 		cost = int(input('Enter product price: '))
 		for i in range(len(product)):
@@ -37,7 +42,10 @@ while True:
 		else:
 			print(name, 'not found')
 	else:
+		# Exit
 		break
+	
+	# Display items
 	print('Products:')
 	print('Name', '\t', 'Price')
 	for prodName, cost in product:

@@ -8,8 +8,10 @@ Sample Input to assign: L = [12,-5,67,0,4,78,9,0,-34,-5,5,7,1,0,89]
 Sample Output: L1 = [67,9,5,7,1,89,12,-5,0,4,78,0,-34,-5,0]
 '''
 
+# Take input
 l = eval(input("Enter a list of numbers: "))
 
+# Divide into two lists
 positiveOddList = []
 otherList = []
 for i in l:
@@ -18,6 +20,7 @@ for i in l:
 	else:
 		otherList.append(i)
 
+# Display final list
 finList = positiveOddList + otherList
 print("Original list: ", l)
 print("New list: ", finList)

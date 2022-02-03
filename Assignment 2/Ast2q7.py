@@ -8,8 +8,10 @@ Sample output: [70,40,20,30,10]
 The smallest and largest number divisible by 5 are 10 and 70.
 '''
 
+# Import variables
 from math import inf
 
+# Take input and reverse
 a = list(map(int, input('Enter the list items: ').split()))
 n = len(a)
 for i in range(n // 2):
@@ -17,6 +19,7 @@ for i in range(n // 2):
 
 print('Reversed list:', a)
 
+# Find min and max
 maxN = -inf
 minN = inf
 for i in a:
@@ -26,6 +29,7 @@ for i in a:
 		if i > maxN:
 			maxN = i
 
+# Display output
 if minN == inf:
 	print('There are no numbers divisible by 5')
 else:

@@ -25,6 +25,7 @@ bookdet = (('Fic101',5,[5]) , ('Lit257',4,[4]) , ('SciFi333',4,[4]),
 memdet = [('m222','AHK101'),('m223','fgdHk'),('m224','iuytr')]
 Issuedetails = []
 while True:
+	# Authenticate user
 	username = input('Enter memid: ')
 	password = input('Enter password: ')
 	loggedIn = False
@@ -39,6 +40,8 @@ while True:
 	else:
 		print('Not authenticated')
 		continue
+
+	# Check it bool is available to borrow
 	for book in bookdet:
 		if book[2][0] > 0:
 			print(book[0], 'available')
@@ -51,6 +54,8 @@ while True:
 	else:
 		print('Book not found')
 		continue
+	
+	# Display users book
 	for user in Issuedetails:
 		if user[0] == memid:
 			user[1].append(bookid)

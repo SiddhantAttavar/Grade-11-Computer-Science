@@ -13,8 +13,8 @@ accountid does not exist, the customer details are taken as input and added in t
 '''
 
 Account = {}
-
 while True:
+	# Take input
 	op = input('Deposit / Withdraw / Display balance / Exit - D/W/B/E: ').lower()
 	accountid = int(input('Enter account id: '))
 	if accountid not in Account:
@@ -23,14 +23,18 @@ while True:
 			'name': name,
 			'balance': 0
 		}
+	
 	if op == 'd':
+		# Deposit
 		amount = int(input('Enter deposit amount: '))
 		Account[accountid]['balance'] += amount
 	elif op == 'w':
+		# Withdraw
 		amount = int(input('Enter withdrawal amount: '))
 		if Account[accountid]['balance'] - amount < 1000:
 			print('Withdrawal cancelled, low balance')
 		else:
 			Account[accountid]['balance'] -= amount
 	elif op == 'b':
+		# Display balance
 		print(Account[accountid]['name'], 'balance is', Account[accountid]['balance'])

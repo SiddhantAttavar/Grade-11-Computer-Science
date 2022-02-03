@@ -6,12 +6,14 @@ elements from L1 and copy them to 2 new lists Sqrand Sq, ignoring zeroes in
 the original list. Display all the lists. (Can use math module)
 '''
 
+# Generate random list
 from math import sqrt
 from random import randint
 l = []
 for i in range(10):
 	l.append(randint(-10,10))
 
+# Find square root of position elements and square of negative elements
 sqr = []
 sq = []
 for i in l:
@@ -20,6 +22,7 @@ for i in l:
 	elif i < 0:
 		sq.append(i**2)
 
+# Display output
 print("Original list: ", l)
 print("Square root of positive elements: ", sqr)
 print("Square of negative elements: ", sq)
