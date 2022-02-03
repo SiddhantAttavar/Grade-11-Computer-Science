@@ -1,9 +1,8 @@
 '''
-Generate 10 random integers in the range -10 to 10 using appropriate
-random method and add them to a list L1.
-Find the square root of the positive elements and square of the negative
-elements from L1 and copy them to 2 new lists Sqrand Sq, ignoring zeroes in 
-the original list. Display all the lists. (Can use math module)
+This program generates 10 random integers in the range -10 to 10 and performs operations:
+ - Find the square root of the positive elements
+ - Find the square of the negative elements
+ - Display all the lists
 '''
 
 # Generate random list

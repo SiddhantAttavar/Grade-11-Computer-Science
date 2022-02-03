@@ -1,11 +1,7 @@
 '''
-Input a list of numbers and reverse the contents without creating a new list. 
-Also find the smallest and the largest number divisible by 5 in this list. 
-Display a suitable message if the numbers are not divisible by 5. 
-Both the operations have to be performed without using any inbuilt function.
-Sample input : [10,30,20,40,70]
-Sample output: [70,40,20,30,10]
-The smallest and largest number divisible by 5 are 10 and 70.
+This program inputs a list of numbers and performs operations:
+ - Reverses the contents without creating a new list. 
+ - Find the smallest and the largest number divisible by 5 in this list
 '''
 
 # Import variables

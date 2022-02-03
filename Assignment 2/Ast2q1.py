@@ -1,8 +1,8 @@
 '''
-Input a list of 10 elements (numbers) and display the
-original list and each occurrence of all the two-digit 
-numbers (including negative 2-digit numbers) in the list.
-Also display the count and sum of them.(Input numbers can be repeated)
+This program inputs a list of elements and performs operations:
+ - Display the original list
+ - Display all occurences of two digit numbers
+ - Display the count and sum of two digit numbers
 '''
 
 # Take input

@@ -1,11 +1,8 @@
 '''
-Input your friend's names and their mobile numbers and store them in a dictionary 
- named 'contact_det' as key value pairs. Perform the following operations:
-a. Use appropriate in built function and arrange the contacts in alphabetical order
-b. Modify the number of an existing contact. If the contact does not exist, add the 
-contact to the dictionary.
-c. Delete a friend's record from the dictionary using his/her number. Display a 
-suitable message if the record does not exist.
+This program inputs contact details and performs operations: 
+ - Use appropriate in built function and arrange the contacts in alphabetical order
+ - Modify the number of an existing contact
+ - Delete a friend's record from the dictionary using his/her number
 '''
 
 # Take input

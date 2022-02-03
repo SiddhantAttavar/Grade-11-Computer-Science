@@ -1,11 +1,8 @@
 '''
-Input the names of 5 cities along with their population and store them in a dictionary 
- named 'population' as key value pairs. Perform the following operations:
-a. Create two new dictionaries ' Male population and Female population with the 
-same key value pair as in 'population'. The male population is 52% of total 
-population and the female is 48% of the total population.
-b. Display the cities with male population greater than 40000.
-c. Compute the average of women population without using any statistical module.
+This program inputs the names of 5 cities along with their population and performs operations:
+ - Create two new dictionaries Male population and Female population
+ - Display the cities with male population greater than 40000.
+ - Compute the average of women population without using any statistical module.
 '''
 
 # Take input
