@@ -1,6 +1,6 @@
 '''
 This program performs operations:
- - Authentice user
+ - Authenticate user
  - Deposit amount to added to balance
  - Withdraw amount is deducted from user
  - Display current account balance of that account holder
